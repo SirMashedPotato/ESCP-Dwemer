@@ -6,7 +6,7 @@
 		<label>Dwemer leather</label>
 		<description>Tanned, dried, scraped Dwemer skin. Most people find this material horrifying. Some find it fascinating.</description>
 		<graphicData>
-		  <color>(198,166,75)</color>
+		  <color>(175,170,153)</color>
 		</graphicData>
 		<statBases>
 		  <MarketValue>4.5</MarketValue>
@@ -15,7 +15,7 @@
 		  <StuffPower_Insulation_Heat>16</StuffPower_Insulation_Heat>
 		</statBases>
 		<stuffProps>
-		  <color>(198,166,75)</color>
+		  <color>(175,170,153)</color>
 		  <commonality>0.0025</commonality>
 		</stuffProps>
 		<comps></comps>
