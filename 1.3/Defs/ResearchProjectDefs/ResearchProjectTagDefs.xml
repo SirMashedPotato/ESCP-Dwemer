@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectTagDef>
+    <defName>ESCP_DwemerStart_Tribal</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>ESCP_DwemerStart_Medieval</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>ESCP_DwemerStart_Industrial</defName>
+  </ResearchProjectTagDef>
+  
+  <ResearchProjectTagDef>
+    <defName>ESCP_DwemerStart</defName>
+  </ResearchProjectTagDef>
+
+</Defs>

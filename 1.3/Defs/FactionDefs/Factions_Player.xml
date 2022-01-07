@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_DwemerPlayerColony</defName>
+		<label>Dwemer arrivals</label>
+		<description>A colony of survivors from the Numidium colonisation ship.</description>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>ESCP_DwemerKind</basicMemberKind>
+		<pawnSingular>Dwemer offworlder</pawnSingular>
+		<pawnsPlural>Dwemer offworlders</pawnsPlural>
+		<techLevel>Industrial</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlementIndustrial</factionIconPath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
+		<allowedCultures>
+			<li>Astropolitan</li>
+			<li>ESCP_Dwemeri</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ESCP_DwemerStart_Industrial</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>ClassicStart</li>
+		  <li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Synthread</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_DwemerPlayerTribe</defName>
+		<label>New Dwemer Tribe</label>
+		<description>A small Dwemer tribe.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>Dwemer tribseman</pawnSingular>
+		<pawnsPlural>Dwemer tribsepeople</pawnsPlural>
+		<basicMemberKind>ESCP_DwemerTribalKind</basicMemberKind>
+		<techLevel>Neolithic</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Dwemeri</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<forageabilityFactor>1.7</forageabilityFactor>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		  <li>ESCP_DwemerStart_Tribal</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+	
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>ESCP_DwemerPlayerKingdom</defName>
+		<label>New Dwemer Kingdom</label>
+		<description>A small Dwemer kingdom.</description>
+		<isPlayer>true</isPlayer>
+		<pawnSingular>Dwemer tribseman</pawnSingular>
+		<pawnsPlural>Dwemer tribsepeople</pawnsPlural>
+		<basicMemberKind>ESCP_DwemerMedievalKind</basicMemberKind>
+		<techLevel>Medieval</techLevel>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Tribal</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+		<settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+		<playerInitialSettlementNameMaker>NamerInitialSettlementColony</playerInitialSettlementNameMaker>
+		<factionNameMaker>NamerFactionTribal</factionNameMaker>
+		<settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+		<allowedCultures>
+			<li>ESCP_Dwemeri</li>
+		</allowedCultures>
+		<geneticVariance>1</geneticVariance>
+		<startingResearchTags>
+		  <li>TribalStart</li>
+		  <li>ESCP_DwemerStart_Medieval</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+		  <li>TribalStart</li>
+		  <li>TribalStartTechprints</li>
+		</startingTechprintsResearchTags>
+		<apparelStuffFilter>
+		  <thingDefs>
+			<li>Cloth</li>
+		  </thingDefs>
+		</apparelStuffFilter>
+		<recipePrerequisiteTags>
+		  <li>Tribal</li>
+		</recipePrerequisiteTags>
+	</FactionDef>
+
+</Defs>

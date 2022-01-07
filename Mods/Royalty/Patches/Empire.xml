@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Royalty</li>
+		</mods> 
+				
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+			<value>
+				<li>ESCP_DwemerPlayerColony</li>
+				<li>ESCP_DwemerPlayerTribe</li>
+				<li>ESCP_DwemerPlayerKingdom</li>
+			</value>
+		</match>
+	</Operation>
+	
+</Patch>
+

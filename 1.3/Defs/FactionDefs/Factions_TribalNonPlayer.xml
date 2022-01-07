@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Tribal -->
+
+  <FactionDef ParentName="ESCP_FactionBase" Name="ESCP_DwemerTribeBase" Abstract="True">
+	<modExtensions>
+	</modExtensions>
+    <factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+    <factionNameMaker>ESCP_NamerFactionDwemer</factionNameMaker>
+	<settlementNameMaker>ESCP_NamerSettlementDwemerEastern</settlementNameMaker>
+    <allowedCultures>
+		<li>ESCP_Dwemeri</li>
+	</allowedCultures>
+	<categoryTag>ESCP_DwemerFaction</categoryTag>
+    <!-- Don't enable unless there are actually backstories -->
+		<!--
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>ESCP_Dwemer_Tribal</li>
+			</categories>
+			<commonality>0.95</commonality>
+		  </li>
+		</backstoryFilters>
+		-->
+	<structureMemeWeights>
+      <Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">999</Structure_Ideological>
+    </structureMemeWeights>
+    <caravanTraderKinds Inherit = "False">
+    </caravanTraderKinds>
+    <visitorTraderKinds Inherit = "False">
+    </visitorTraderKinds>
+    <baseTraderKinds>
+    </baseTraderKinds>
+    <raidLootMaker>ESCP_DwemerTribeRaidLootMaker</raidLootMaker>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <ESCP_DwemerTribal_Penitent>5</ESCP_DwemerTribal_Penitent>
+          <ESCP_DwemerTribal_Warrior>5</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_Berserker>5</ESCP_DwemerTribal_Berserker>
+          <ESCP_DwemerTribal_ChiefRanged>3</ESCP_DwemerTribal_ChiefRanged>
+          <ESCP_DwemerTribal_ChiefMelee>1.5</ESCP_DwemerTribal_ChiefMelee>
+	   </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_ChiefRanged>5</ESCP_DwemerTribal_ChiefRanged>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>30</commonality>
+        <options>
+          <ESCP_DwemerTribal_Penitent>10</ESCP_DwemerTribal_Penitent>
+          <ESCP_DwemerTribal_Warrior>10</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Berserker>10</ESCP_DwemerTribal_Berserker>
+          <ESCP_DwemerTribal_ChiefMelee>5</ESCP_DwemerTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- breach-capable fights, breachers plus ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>5</commonality>
+        <options>
+          <ESCP_DwemerTribal_Breacher>5</ESCP_DwemerTribal_Breacher>
+          <ESCP_DwemerTribal_Penitent>5</ESCP_DwemerTribal_Penitent>
+          <ESCP_DwemerTribal_Warrior>5</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_Berserker>5</ESCP_DwemerTribal_Berserker>
+          <ESCP_DwemerTribal_ChiefRanged>3</ESCP_DwemerTribal_ChiefRanged>
+          <ESCP_DwemerTribal_ChiefMelee>1.5</ESCP_DwemerTribal_ChiefMelee>
+      </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <ESCP_DwemerTribal_Warrior>20</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_Berserker>5</ESCP_DwemerTribal_Berserker>
+          <ESCP_DwemerTribal_ChiefRanged>3</ESCP_DwemerTribal_ChiefRanged>
+          <ESCP_DwemerTribal_ChiefMelee>1.5</ESCP_DwemerTribal_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <ESCP_DwemerTribal_Trader>1</ESCP_DwemerTribal_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <ESCP_DwemerTribal_Warrior>7</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_Berserker>7</ESCP_DwemerTribal_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <ESCP_DwemerTribal_Warrior>7</ESCP_DwemerTribal_Warrior>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_Berserker>7</ESCP_DwemerTribal_Berserker>
+          <ESCP_DwemerTribal_ChiefRanged>10</ESCP_DwemerTribal_ChiefRanged>
+        </options>
+      </li>
+      <li>
+        <kindDef>Settlement_RangedOnly</kindDef>
+        <options>
+          <ESCP_DwemerTribal_Archer>10</ESCP_DwemerTribal_Archer>
+          <ESCP_DwemerTribal_Hunter>10</ESCP_DwemerTribal_Hunter>
+          <ESCP_DwemerTribal_HeavyArcher>10</ESCP_DwemerTribal_HeavyArcher>
+          <ESCP_DwemerTribal_ChiefRanged>10</ESCP_DwemerTribal_ChiefRanged>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Miners</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_DwemerTribal_Miner>1</ESCP_DwemerTribal_Miner>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Hunters</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_DwemerTribal_Hunter>1</ESCP_DwemerTribal_Hunter>
+        </options>
+      </li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">
+        <kindDef>Farmers</kindDef>
+        <commonality>1</commonality>
+        <options>
+          <ESCP_DwemerTribal_Farmer>1</ESCP_DwemerTribal_Farmer>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/TribalSettlement</settlementTexturePath>
+  </FactionDef>
+
+  <ThingSetMakerDef>
+    <defName>ESCP_DwemerTribeRaidLootMaker</defName>
+    <root Class="ThingSetMaker_MarketValue">
+      <fixedParams>
+        <filter>
+          <thingDefs>
+            <li>Silver</li>
+            <li>Jade</li>
+            <li>MedicineHerbal</li>
+            <li>Pemmican</li>
+          </thingDefs>
+        </filter>
+      </fixedParams>
+    </root>
+  </ThingSetMakerDef>
+  
+  <FactionDef ParentName="ESCP_DwemerTribeBase">
+    <defName>ESCP_DwemerTribeEastern</defName>
+    <label>Eastern Dwemer Kingdom</label>
+	<description>A Dwemer kingdom, composed of several grand cities buried beneath the earth.\n\nDwemer prefer to keep to themselves, and are unlikely to be found sending trade caracans abroad.\n\This particular kingdom controls the Dwemers original homeland. They are quite open to trade and alliances, even with strange peoples.</description>
+	<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<likedBiomeList>
+				<li>MorrowRim_Ashlands</li>
+				<li>MorrowRim_BlightedAshlands</li>
+				<li>MorrowRim_VolcanicAshlands</li>
+				<li>MorrowRim_AshSwamp</li>
+				<li>MorrowRim_Grazelands</li>
+			</likedBiomeList>
+			<requiredHillLevels>
+				<li>LargeHills</li>
+				<li>SmallHills</li>
+				<li>Mountainous</li>
+			</requiredHillLevels>
+			<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+        </li>
+	</modExtensions>
+	<colorSpectrum>
+      <li>(0.4, 0.35, 0.35)</li>
+      <li>(0.5, 0.47, 0.47)</li>
+	  <li>(0.46, 0.45, 0.41)</li>
+    </colorSpectrum>
+	<requiredMemes>
+		<li>Structure_Ideological</li>
+	</requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+  </FactionDef>
+  
+  <FactionDef ParentName="ESCP_DwemerTribeBase">
+    <defName>ESCP_DwemerTribeWestern</defName>
+    <label>Western Dwemer Kingdom</label>
+	<description>A Dwemer kingdom, composed of several grand cities buried beneath the earth.\n\nDwemer prefer to keep to themselves, and are unlikely to be found sending trade caracans abroad.\n\This particular kingdom was born from an expansion to to the west. They are quite open to trade and alliances, even with strange peoples.</description>
+	<modExtensions>
+		<li Class="ESCP_RaceTools.SettlementPreference">
+			<useSwampinessRange>true</useSwampinessRange>
+			<swampinessRangeMin>0.0</swampinessRangeMin>
+			<swampinessRangeMax>0.5</swampinessRangeMax>
+			<useRainfallRange>true</useRainfallRange>
+			<rainfallRangeMin>0</rainfallRangeMin>
+			<rainfallRangeMax>500</rainfallRangeMax>
+			<requiredHillLevels>
+				<li>SmallHills</li>
+				<li>LargeHills</li>
+				<li>Mountainous</li>
+			</requiredHillLevels>
+			<dislikedBiomeList>
+				<li>MorrowRim_Ashlands</li>
+				<li>MorrowRim_BlightedAshlands</li>
+				<li>MorrowRim_VolcanicAshlands</li>
+				<li>MorrowRim_AshSwamp</li>
+				<li>MorrowRim_Grazelands</li>
+			</dislikedBiomeList>
+			<IgnoreBiomeSelectionWeight>true</IgnoreBiomeSelectionWeight>
+        </li>
+	</modExtensions>
+	<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlementAlt</factionIconPath>
+	<settlementNameMaker>ESCP_NamerSettlementDwemerWestern</settlementNameMaker>
+	<colorSpectrum>
+      <li>(0.6, 0.5, 0.3)</li>
+      <li>(0.7, 0.6, 0.3)</li>
+      <li>(0.5, 0.4, 0.1)</li>
+    </colorSpectrum>
+	<requiredMemes>
+		<li>Structure_Ideological</li>
+	</requiredMemes>
+    <disallowedMemes>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+      <li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+    </disallowedMemes>
+    <maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+    <configurationListOrderPriority>40</configurationListOrderPriority>
+  </FactionDef>
+
+</Defs>
