@@ -162,7 +162,7 @@
 					</li>
 					</colorChannels>
 					<!-- -->
-					<customDrawSize>(0.9, 1.1)</customDrawSize>
+					<customDrawSize>(0.9, 1.0)</customDrawSize>
 					<customHeadDrawSize>(1, 1)</customHeadDrawSize>
 					<!--<headOffset>(0.0, 0.05)</headOffset>-->
 					<bodyAddons>
