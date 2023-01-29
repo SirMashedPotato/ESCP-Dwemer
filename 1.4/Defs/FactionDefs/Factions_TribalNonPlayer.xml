@@ -13,7 +13,7 @@
 		<settlementGenerationWeight>0.5</settlementGenerationWeight>
 		<leaderTitle>king</leaderTitle>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
-		<factionNameMaker>ESCP_Chimer_NamerFaction</factionNameMaker>
+		<factionNameMaker>ESCP_Dwemer_NamerFaction</factionNameMaker>
 		<caravanTraderKinds Inherit="False"/>
 		<visitorTraderKinds Inherit="False"/>
 		<allowedCultures>
@@ -182,7 +182,7 @@
 			</li>
 		</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
-		<settlementNameMaker>ESCP_Chimer_NamerSettlementEastern</settlementNameMaker>
+		<settlementNameMaker>ESCP_Dwemer_NamerSettlementEastern</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.4, 0.35, 0.35)</li>
 			<li>(0.5, 0.47, 0.47)</li>
@@ -218,7 +218,7 @@
 			</li>
 		</modExtensions>
 		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlementAlt</factionIconPath>
-		<settlementNameMaker>ESCP_Chimer_NamerSettlementWestern</settlementNameMaker>
+		<settlementNameMaker>ESCP_Dwemer_NamerSettlementWestern</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.6, 0.5, 0.3)</li>
 			<li>(0.7, 0.6, 0.3)</li>
