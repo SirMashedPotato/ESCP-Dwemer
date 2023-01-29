@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- ==========[ESCP_AchievementDwemer_DwemerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementDwemer_DwemerColonists</defName>
+		<label>Seeking out the Lost</label>
+		<description>Have 12 Dwemer in your colony at the same time</description>
+		<tracker Class="AchievementsExpanded.RaceDefTracker">
+			<raceDefs>
+				<li>
+					<key>ESCP_DwemerRace</key>
+					<value>12</value>
+				</li>
+			</raceDefs>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementDwemer_DwemerColonists</texPath>
+		<points>25</points>
+	</AchievementsExpanded.AchievementDef>
+	<!-- ==========[ESCP_AchievementDwemer_DwemerColonists]========== -->
+	<AchievementsExpanded.AchievementDef ParentName="ESCP_Achievement_Base">
+		<defName>ESCP_AchievementDwemer_DwemerSlayer</defName>
+		<label>I Thought They Were Ghosts</label>
+		<description>Slay 50 Dwemer</description>
+		<tracker Class="AchievementsExpanded.KillTracker">
+			<raceDef>ESCP_DwemerRace</raceDef>
+			<count>50</count>
+		</tracker>
+		<texPath>Achievements/ESCP_AchievementDwemer_DwemerSlayer</texPath>
+		<points>10</points>
+	</AchievementsExpanded.AchievementDef>
+</Defs>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<StyleCategoryDef>
+		<defName>ESCP_DwemerStyle</defName>
+		<label>Dwemeri</label>
+		<iconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</iconPath>
+		<!--
+		<soundOngoingRitual>RitualSustainer_Hindu</soundOngoingRitual>
+		<ritualVisualEffectDef>Hindu</ritualVisualEffectDef>
+		-->
+		<thingDefStyles>
+		
+		</thingDefStyles>
+	</StyleCategoryDef>
+</Defs>

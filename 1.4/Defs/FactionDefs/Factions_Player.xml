@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_PlayerFactionBase_Industrial] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Industrial">
+		<defName>ESCP_DwemerPlayerFaction_Industrial</defName>
+		<label>New Dwemer Arrivals</label>
+		<basicMemberKind>ESCP_DwemerPlayerPawnKind_Outlander</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_DwemerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_DwemerStart_Industrial</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_DwemerFaction</li>
+					<li>ESCP_DwemerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_DwemerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Medieval">
+		<defName>ESCP_DwemerPlayerFaction_Medieval</defName>
+		<label>New Dwemer Kingdom</label>
+		<basicMemberKind>ESCP_DwemerPlayerPawnKind_Medieval</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_DwemerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_DwemerStart_Medieval</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_DwemerFaction</li>
+					<li>ESCP_DwemerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+	<!-- ========== [ESCP_DwemerPlayerFactionBase_Tribal] ========== -->
+	<FactionDef ParentName="ESCP_PlayerFactionBase_Tribal">
+		<defName>ESCP_DwemerPlayerFaction_Tribal</defName>
+		<label>New Dwemer Tribe</label>
+		<basicMemberKind>ESCP_DwemerPlayerPawnKind_Tribal</basicMemberKind>
+		<factionIconPath>World/WorldObjects/Expanding/ESCP_DwemerSettlement</factionIconPath>
+		<allowedCultures>
+			<li>ESCP_DwemerCulture</li>
+		</allowedCultures>
+		<startingResearchTags>
+			<li>ESCP_DwemerStart_Tribal</li>
+		</startingResearchTags>
+		<modExtensions>
+			<li Class="ESCP_RaceTools.FactionProperties">
+				<factionTags>
+					<li>ESCP_DwemerFaction</li>
+					<li>ESCP_DwemerFactionPlayer</li>
+				</factionTags>
+			</li>
+		</modExtensions>
+	</FactionDef>
+</Defs>

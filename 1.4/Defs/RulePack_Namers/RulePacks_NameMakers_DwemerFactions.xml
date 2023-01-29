@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<!-- ========== [ESCP_Chimer_NamerFaction] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Chimer_NamerFaction</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[a][b]'s Kingdom</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_DwemerNames/DwemerName_A</li>
+				<li>b->ESCP_DwemerNames/DwemerName_B</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Chimer_NamerSettlementEastern] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Chimer_NamerSettlementEastern</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[name]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>name->ESCP_DwemerNames/DwemerCities_Eastern</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+	<!-- ========== [ESCP_Chimer_NamerSettlementWestern] ========== -->
+	<RulePackDef>
+		<defName>ESCP_Chimer_NamerSettlementWestern</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>r_name->[name]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>name->ESCP_DwemerNames/DwemerCities_Western</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>

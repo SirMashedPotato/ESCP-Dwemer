@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+<!-- ==========[ESCP_PlayerPawnKindBase_Outlander]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Outlander">
+		<defName>ESCP_DwemerPlayerPawnKind_Outlander</defName>
+		<race>ESCP_DwemerRace</race>
+		<defaultFactionType>ESCP_DwemerPlayerFaction_Industrial</defaultFactionType>
+	</PawnKindDef>
+	<!-- ==========[ESCP_PlayerPawnKindBase_Medieval]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Medieval">
+		<defName>ESCP_DwemerPlayerPawnKind_Medieval</defName>
+		<race>ESCP_DwemerRace</race>
+		<defaultFactionType>ESCP_DwemerPlayerFaction_Medieval</defaultFactionType>
+	</PawnKindDef>
+	<!-- ==========[ESCP_PlayerPawnKindBase_Tribal]========== -->
+	<PawnKindDef ParentName="ESCP_PlayerPawnKindBase_Tribal">
+		<defName>ESCP_DwemerPlayerPawnKind_Tribal</defName>
+		<race>ESCP_DwemerRace</race>
+		<defaultFactionType>ESCP_DwemerPlayerFaction_Tribal</defaultFactionType>
+	</PawnKindDef>
+</Defs>

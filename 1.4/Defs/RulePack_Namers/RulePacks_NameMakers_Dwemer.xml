@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RulePackDef>
+		<defName>ESCP_Dwemer_Namer</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[a][b] [a][b]</li>
+				<li>name->[a][b] [a][b][b]</li>
+				<li>name->[a][b] [a][b]-[a][b]</li>
+				<li>name->[a][b][b] [a][b]</li>
+				<li>name->[a][b][b] [a][b][b]</li>
+				<li>name->[a][b][b] [a][b]-[a][b]</li>
+				<li>name->[a][b]-[a][b] [a][b]</li>
+				<li>name->[a][b]-[a][b][b] [a][b][b]</li>
+				<li>name->[a][b][b]-[a][b][b] [a][b]-[a][b]</li>
+			</rulesStrings>
+			<rulesFiles>
+				<li>a->ESCP_DwemerNames/DwemerName_A</li>
+				<li>b->ESCP_DwemerNames/DwemerName_B</li>
+			</rulesFiles>
+		</rulePack>
+	</RulePackDef>
+</Defs>
