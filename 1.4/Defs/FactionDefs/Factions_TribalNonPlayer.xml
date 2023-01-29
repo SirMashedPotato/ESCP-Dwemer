@@ -24,6 +24,11 @@
 			<Structure_Ideological MayRequire="Ludeon.RimWorld.Ideology">20</Structure_Ideological>
 			<ESCP_Structure_OriginLorkhanCult MayRequire="Ludeon.RimWorld.Ideology">2</ESCP_Structure_OriginLorkhanCult>
 		</structureMemeWeights>
+		<requiredMemes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Astrology</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_CraftCulture</li>
+			<li MayRequire="Sarg.AlphaMemes">AM_Bulwark</li>
+		</requiredMemes>
 		<pawnGroupMakers>
 			<li>
 				<!-- Normal fights, ranged with melee mix-ins -->
