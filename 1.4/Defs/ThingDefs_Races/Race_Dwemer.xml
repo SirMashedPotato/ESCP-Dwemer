@@ -33,6 +33,7 @@
 							<name>skin</name>
 							<first Class="ColorGenerator_Options">
 								<options>
+									<!-- grey with gold tones -->
 									<li>
 										<weight>10</weight>
 										<only>(175,170,153,255)</only>
@@ -93,6 +94,32 @@
 										<weight>10</weight>
 										<only>(135,132,119,255)</only>
 									</li>
+									<!-- Pale gold
+									<li>
+										<weight>10</weight>
+										<only>(195,183,127,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(207,198,155,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(200,188,137,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(200,188,137,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(195,183,149,255)</only>
+									</li>
+									<li>
+										<weight>10</weight>
+										<only>(174,161,123,255)</only>
+									</li>
+									-->
 								</options>
 							</first>
 						</li>
